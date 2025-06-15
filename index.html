@@ -6,6 +6,7 @@
     <title>Eder Barbearia</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" href="logo/logo.jpg" type="image/x-icon">
 </head>
 <body>
 
@@ -20,43 +21,37 @@
                 <li><a href="#galeria">Galeria</a></li>
                 <li><a href="#barbeiro">O Barbeiro</a></li>
                 <li><a href="#horarios">Horários</a></li>
-                <li><a href="#servicos">Serviços</a></li>       
-            </ul>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#contato">Contato</a></li> </ul>
             <div class="menu-toggle">
                 <i class="fas fa-bars"></i>
             </div>
         </nav>
     </header>
 
-    <section id="hero" class="hero">
+   <section id="hero" class="hero">
         <div class="container hero-content">
             <div class="text-side">
                 <h1>Você em sua melhor versão!</h1>
                 <p>Cortes modernos, barba impecável e um ambiente pensado para você.</p>
                 <a href="#servicos" class="btn-cta">Descubra Nossos Serviços</a>
             </div>
-            <div class="image-side">
-                <img src="imagens/interior.jpg" alt="Barbeiro trabalhando em cliente">
             </div>
-        </div>
     </section>
 
     <section id="especialidades" class="especialidades">
         <div class="container">
-            <h2>Nossas Especialidades</h2>
+            <h2>Minhas Especialidades</h2>
             <div class="servico-cards">
                 <div class="card">
-                    <img src="imagens/cabelo.jpg" alt="Cortes de Cabelo Masculinos">
                     <h3>Cortes de Cabelo</h3>
                     <p>Do clássico ao moderno, encontre seu estilo.</p>
                 </div>
                 <div class="card">
-                    <img src="imagens/barba.jpg" alt="Serviços de Barba">
                     <h3>Barba</h3>
                     <p>Modelagem e aparação.</p>
                 </div>
                 <div class="card">
-                    <img src="imagens/sobrancelha.jpg" alt="Design de Sobrancelha Masculina">
                     <h3>Design de Sobrancelha</h3>
                     <p>Realce seu olhar com simetria e precisão.</p>
                 </div>
@@ -67,10 +62,11 @@
     <section id="sobre" class="sobre">
         <div class="container sobre-content">
             <div class="sobre-image">
-                <img src="imagens/logo-grande.png" alt="Logo Éder Barbearia Detalhe">
+                <img src="imagens/interior.jpg" alt="Ambiente da Barbearia">
             </div>
             <div class="sobre-text">
-                <h2>Conheça a Eder Barbearia</h2>
+                <img src="logo/logo.jpg" alt="Logo Éder Barbearia Detalhe" class="sobre-logo">
+                <h2>Conheça Eder Barbearia</h2>
                 <p>Mais do que um corte de cabelo, uma experiência. Na Éder Barbearia, unimos tradição e as últimas tendências para garantir um visual impecável.</p>
                 <p>Nosso ambiente é pensado para seu conforto e relaxamento, enquanto nossos profissionais transformam sua autoestima.</p>
             </div>
@@ -79,14 +75,14 @@
 
     <section class="marquee-section">
         <div class="marquee-text">
-            <span>EDER BARBEARIA • VOCÊ EM SUA MELHOR VERSÃO • EDER BARBEARIA • QUALIDADE E TRADIÇÃO •</span>
+            <img src="logo/barbershoppreto.png" alt="Icone de Barbearia"><span>EDER BARBEARIA • VOCÊ EM SUA MELHOR VERSÃO • EDER BARBEARIA • QUALIDADE E TRADIÇÃO •</span><img src="logo/barbershoppreto.png" alt="Icone de Barbearia">
             <span>EDER BARBEARIA • VOCÊ EM SUA MELHOR VERSÃO • EDER BARBEARIA • QUALIDADE E TRADIÇÃO •</span>
         </div>
     </section>
 
     <section id="galeria" class="galeria">
         <div class="container">
-            <h2>Nossa Galeria</h2>
+            <h2>Galeria</h2>
             <div class="galeria-grid">
                 <img src="imagens/f1.jpg" alt="Corte de Cabelo Masculino Estiloso">
                 <img src="imagens/f2.jpg" alt="Barba Bem Cuidada">
@@ -102,19 +98,23 @@
 
     <section id="barbeiro" class="barbeiro">
         <div class="container barbeiro-content">
-            <div class="barbeiro-image">
-                <img src="imagens/eder.jpg" alt="Foto do Barbeiro Éder">
-            </div>
-            <div class="barbeiro-text">
-                <h2>Eder</h2>
+            <div class="barbeiro-text-side">
+                <h2>O Barbeiro</h2>
                 <p>Com anos de experiência e um olhar apurado para as tendências, Eder é o responsável por dar vida aos seus desejos de estilo.</p>
                 <p>Sua paixão pela arte da barbearia se reflete em cada detalhe, garantindo um serviço de excelência e um sorriso no rosto de cada cliente.</p>
+            </div>
+            <div class="barbeiro-image-card">
+                <img src="imagens/eder.jpg" alt="Foto do Barbeiro Éder">
+                <p class="barbeiro-name">Eder</p>
             </div>
         </div>
     </section>
 
     <section id="horarios" class="horarios">
-        <div class="container">
+        <div class="container horarios-content">
+            <div class="horarios-image">
+                <img src="imagens/f6.jpg" alt="Imagem Ilustrativa Horários">
+            </div>
             <div class="horarios-info">
                 <h2>Horários de Funcionamento</h2>
                 <p><strong>Segunda a Sexta:</strong> 09:00 às 19:00</p>
@@ -125,73 +125,82 @@
     </section>
 
     <section id="servicos" class="servicos">
-        <div class="servicos-detalhes">
+        <div class="container servicos-detalhes">
             <h2>Nossos Serviços e Preços</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Serviço</th>
-                        <th>Descrição</th>
-                        <th>Preço</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Corte Masculino</td>
-                        <td>Corte com tesoura e máquina, finalização e lavagem.</td>
-                        <td>R$ 45,00</td>
-                    </tr>
-                    <tr>
-                        <td>Barba Tradicional</td>
-                        <td>Modelagem, aparação e pós-barba.</td>
-                        <td>R$ 35,00</td>
-                    </tr>
-                    <tr>
-                        <td>Combo (Corte + Barba)</td>
-                        <td>Corte e barba combinados.</td>
-                        <td>R$ 70,00</td>
-                    </tr>
-                    <tr>
-                        <td>Sobrancelha</td>
-                        <td>Design e limpeza de sobrancelha.</td>
-                        <td>R$ 20,00</td>
-                    </tr>
-                    <tr>
-                        <td>Corte Kids (Até 12 anos)</td>
-                        <td>Corte moderno e divertido para os pequenos.</td>
-                        <td>R$ 30,00</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="servicos-columns">
+                <div class="servico-column">
+                    <div class="servico-item">
+                        <span>Corte Masculino</span>
+                        <span class="price">R$ XX,00</span>
+                    </div>
+                    <div class="servico-item">
+                        <span>Barba Tradicional</span>
+                        <span class="price">R$ XX,00</span>
+                    </div>
+                    <div class="servico-item">
+                        <span>Combo (Corte + Barba)</span>
+                        <span class="price">R$ XX,00</span>
+                    </div>
+                </div>
+                <div class="servico-column">
+                    <div class="servico-item">
+                        <span>Sobrancelha</span>
+                        <span class="price">R$ XX,00</span>
+                    </div>
+                    <div class="servico-item">
+                        <span>Corte Kids (Até 12 anos)</span>
+                        <span class="price">R$ XX,00</span>
+                    </div>
+                    <div class="servico-item">
+                        <span>Combo (Corte + Barba + Sobrancelha)</span>
+                        <span class="price">R$ XX,00</span>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section id="localização">
-        <div class="container content">
-            <div class="footer-item">
-                <h3><i class="fas fa-phone-alt"></i> Telefone</h3>
-                <p>+55 (XX) XXXX-XXXX</p>
+    <section id="contato" class="contato">
+        <div class="container contato-content">
+            <div class="contato-socials">
+                <h2>Redes Sociais</h2>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/eder_barbearia" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+                    <!-- <a href="#" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a> -->
+                    <a href="https://wa.me/5534996756101" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp: (34) 99675-6101</a>
+                </div>
             </div>
-            <div class="footer-item">
-                <h3><i class="fab fa-instagram"></i> Instagram</h3>
-                <p><a href="https://www.instagram.com/ederbarbearia" target="_blank">@ederbarbearia</a></p>
+            <div class="contato-image">
+                <img src="imagens/f8.jpg" alt="Pessoas usando redes sociais">
             </div>
-            <div class="footer-item">
-                <h3><i class="fas fa-map-marker-alt"></i> Endereço</h3>
-                <p>Rua Exemplo, 123<br>Centro, Sua Cidade - SP</p>
+        </div>
+    </section>
+
+    <section id="localizacao" class="localizacao-section">
+        <div class="container localizacao-content">
+            <div class="localizacao-info">
+                <h2>Endereço</h2>
+                <p><i class="fas fa-map-marker-alt"></i> José da - R. José Silva Ramos, 220</p>
+                <p>Alcides Junqueira, Ituiutaba - MG</p>
+                <!-- <p><i class="fas fa-phone-alt"></i> (34) 99675-6101 </p> -->
             </div>
-            <div class="footer-item footer-map">
-                <h3>Localização</h3>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.52494050212!2d-43.3423714249141!3d-22.7533039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9972b22f671c67%3A0x8867a5b3a32f6e52!2sRua%20Exemplo%2C%20123%2C%20Sua%20Cidade%20-%20RJ!5e0!3m2!1spt-BR!2sbr!4v1700000000000!5m2!1spt-BR!2sbr" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="localizacao-map">
+                <h2>Localização</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3772.746787951959!2d-49.4438129!3d-18.986787000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94a233cd69779545%3A0x690b60bdfeb1bd8!2sEder%20Barbearia!5e0!3m2!1spt-BR!2sbr!4v1749949774733!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
     </section>
 
     <footer>
-        <div>
-            <p>Seja Bem-Vindo à Éder Barbearia!</p>
-            <p>&copy; 2025 Éder Barbearia - Todos os direitos reservados.</p>
+    <div class="container footer-simple">
+        <p>Eder Barbearia &bull; José da - R. José Silva Ramos, 220 - Alcides Junqueira, Ituiutaba - MG &bull; (34) 99675-6101</p>
+        <div class="footer-socials-simple">
+            <a href="https://www.instagram.com/eder_barbearia" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5534996756101" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+            <!-- <a href="#" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a> -->
         </div>
+        <p>&copy; <span id="current-year"></span> Eder Barbearia. Todos os direitos reservados.</p>
+    </div>
     </footer>
 
     <script src="script.js"></script>
